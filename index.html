@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RE:NEWABLE // The Uncensored Energy Trilogy</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- MathJax for rendering gorgeous KaTeX/LaTeX math formulas -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body class="theme-dark">
+
+    <!-- Film Grain Overlay -->
+    <div id="film-grain-overlay"></div>
+
+    <!-- SITE HEADER -->
+    <header class="site-header">
+        <div class="header-top">
+            <div class="brand-wrapper">
+                <span class="brand-title">RE:NEWABLE</span>
+                <span class="brand-subtitle">// The Uncensored Energy Trilogy</span>
+            </div>
+            <div class="header-controls">
+                <div class="header-progress-wrap">
+                    <div class="header-progress-bar">
+                        <div id="header-progress-fill"></div>
+                    </div>
+                    <span id="header-progress-text">0% MASTERED</span>
+                </div>
+                <button id="header-read-aloud-btn" class="header-btn" title="Listen to Dr. Nova Narrate Aloud">🎙 READ ALOUD</button>
+                <button id="sound-toggle-btn" class="header-btn" title="Toggle Synthesizer Sound Effects">SOUND: ON</button>
+                <button id="grain-toggle-btn" class="header-btn" title="Toggle Analog Film Grain Texture">GRAIN: ON</button>
+                <button id="theme-toggle-btn" class="header-btn" title="Switch Theme">☾ NOIR DARK</button>
+            </div>
+        </div>
+
+        <nav class="header-nav">
+            <ul class="nav-links">
+                <li><a href="#prologue" class="nav-link active" data-target="prologue">00 // PROLOGUE</a></li>
+                <li><a href="#ch1" class="nav-link" data-target="ch1">01 // FUEL CELLS</a></li>
+                <li><a href="#ch2" class="nav-link" data-target="ch2">02 // EARTH & OCEAN</a></li>
+                <li><a href="#ch3" class="nav-link" data-target="ch3">03 // MHD PLASMA</a></li>
+                <li><a href="#quiz" class="nav-link" data-target="quiz">⚡ THE GAUNTLET</a></li>
+                <li><a href="#chat" class="nav-link" data-target="chat">☕ TEA ROOM</a></li>
+                <li><a href="#vault" class="nav-link" data-target="vault">📄 CHEAT SHEET</a></li>
+            </ul>
+
+            <div class="nav-search-wrap">
+                <input type="text" id="global-search-input" class="search-input" placeholder="Search secrets, formulas, cells..." autocomplete="off">
+                <div id="search-dropdown" class="search-dropdown hidden"></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN WRAPPER -->
+    <main class="main-container">
+
+        <!-- ===================================================================
+             00. PROLOGUE & MANIFESTO
+             =================================================================== -->
+        <section id="section-prologue" class="chapter-section">
+            <div class="hero-manifesto">
+                <span class="hero-tag">THE RE:NEWABLE MANIFESTO</span>
+                <button class="listen-btn" title="Listen to Manifesto">▶ LISTEN ALOUD 🎙</button>
+                <h1 class="hero-heading">FORGET THE BORING TEXTBOOKS.<br>HERE IS HOW ENERGY ACTUALLY WORKS.</h1>
+                <p class="hero-lead">
+                    Let’s be honest: standard university slides on renewable energy are often criminally dry. They show you blurry schematics, dump 50 unexplained Greek variables on the chalkboard, and completely hide the <strong>furious corporate feuds, thermodynamic scandals, and sheer engineering genius</strong> powering our world.
+                </p>
+                <p class="hero-lead">
+                    We are ditching the academic snooze-fest. Today, you and I are having a raw, unfiltered, spicy masterclass in <strong>black and white</strong> across the <strong>three distinct frontiers of advanced clean power</strong>. Grab an espresso, sharpen your pencils, and let’s spill the tea on physics.
+                </p>
+
+                <div class="hero-trilogy-grid">
+                    <div class="hero-card" data-cta-target="ch1">
+                        <div>
+                            <div class="card-num">CHAPTER 01 // ELECTROCHEMISTRY</div>
+                            <h3 class="card-title">The Fuel Cell Conspiracy</h3>
+                            <p class="card-desc">
+                                Why burning hydrogen is for cavemen, how Sir William Grove got ghosted for 100 years, the scandalous reason Apollo 13 exploded, and why Elon Musk called them "Fool Cells."
+                            </p>
+                        </div>
+                        <div class="card-action">START CHAPTER 01 →</div>
+                    </div>
+
+                    <div class="hero-card" data-cta-target="ch2">
+                        <div>
+                            <div class="card-num">CHAPTER 02 // MASSIVE GRAVITY & HEAT</div>
+                            <h3 class="card-title">Earth & Ocean Titans</h3>
+                            <p class="card-desc">
+                                6,000°C subterranean magma, the stinky truth of Manikaran hot springs, OTEC’s 1.3 billion km³ undercover solar battery, and the magical Wells Turbine that never reverses direction.
+                            </p>
+                        </div>
+                        <div class="card-action">START CHAPTER 02 →</div>
+                    </div>
+
+                    <div class="hero-card" data-cta-target="ch3">
+                        <div>
+                            <div class="card-num">CHAPTER 03 // SUPERCONDUCTING NOISE</div>
+                            <h3 class="card-title">Magnetohydrodynamics (MHD)</h3>
+                            <p class="card-desc">
+                                Who said electricity needs spinning metal turbines? Blast 2,500°C supersonic seeded plasma through a 6-Tesla magnetic field and extract raw DC current straight out of thin air.
+                            </p>
+                        </div>
+                        <div class="card-action">START CHAPTER 03 →</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================================
+             01. CHAPTER 1: FUEL CELLS
+             =================================================================== -->
+        <section id="section-ch1" class="chapter-section hidden">
+            <div class="chapter-hero-banner">
+                <div class="ch-meta-row">
+                    <span class="ch-pill">CHAPTER 01 // UNIT 3 CURRICULUM</span>
+                    <span id="badge-ch1" class="ch-badge">UNREAD</span>
+                </div>
+                <h1 class="ch-title">THE FUEL CELL CONSPIRACY</h1>
+                <p class="ch-tagline">
+                    "Why burn hydrogen like an amateur when you can seduce electrons into taking a 1.23-Volt detour across a polymer membrane?"
+                </p>
+            </div>
+
+            <!-- TEA SPILL 1 -->
+            <div class="tea-spill-box">
+                <div class="tea-spill-header">
+                    <span class="tea-icon">☕</span>
+                    <span class="tea-label">THE TEA // HISTORICAL DRAMA</span>
+                    <button class="listen-btn" title="Listen to this tea spill">▶ LISTEN 🎙</button>
+                </div>
+                <h3 class="tea-headline">Sir William Grove Got Ghosted for Over a Century</h3>
+                <p class="tea-content">
+                    Back in <strong>1839</strong>, a Welsh lawyer and gentleman scientist named <strong>Sir William Grove</strong> ran electrolysis backwards. He realized that if electricity splits water into \(H_2\) and \(O_2\), putting \(H_2\) and \(O_2\) back together over platinum strips produces direct current and pure water! He called it the "gas voltaic battery."<br><br>
+                    Did the world bow down and electrify Victorian London? <em>Absolutely not.</em> The internal combustion engine was born, coal barons were rolling in money, and petroleum became dirt cheap. Humanity collectively ghosted electrochemistry for 120 years until NASA realized that burning oil inside an Apollo capsule was a great way to asphyxiate astronauts in lunar orbit.
+                </p>
+            </div>
+
+            <!-- SECTION 1.1 -->
+            <div class="content-block">
+                <h2 class="section-subhead">01.1 The Anatomy of the Miracle <span>// Working Principle</span> <button class="listen-btn">▶ LISTEN 🎙</button></h2>
+                <p class="prose-text">
+                    Here’s the deal: combustion is chaotic, violent, and thermodynamically dirty. When you light hydrogen on fire, you are letting hydrogen and oxygen violently collide in a flash of heat. Their electrons jump across instantly, generating entropy and heat that gets trapped by the notorious <strong>Carnot efficiency limit</strong>.
+                </p>
+                <p class="prose-text">
+                    A <strong>fuel cell</strong> is an electrochemical device that converts chemical energy <em>directly into electrical energy</em> without burning anything. It is an organized hostage situation:
+                </p>
+                <ol style="margin-left: 2rem; margin-bottom: 1.5rem; line-height: 1.9; color: var(--text-secondary);">
+                    <li><strong>At the Anode (-):</strong> Hydrogen gas (\(H_2\)) arrives and meets a catalytic layer (usually nano-dispersed Platinum). The catalyst strips each hydrogen atom of its electron:
+                        <br><strong>Anode Reaction:</strong> \(2H_2 \to 4H^+ + 4e^-\)
+                    </li>
+                    <li><strong>The Electrolyte Bouncer:</strong> In the center sits the electrolyte (like a Nafion membrane in a PEMFC). The electrolyte is a strictly selective membrane: it welcomes positive \(H^+\) protons to walk right through, but <em>strictly forbids electrons (\(e^-\)) from entering</em>!
+                    </li>
+                    <li><strong>The External Highway:</strong> Desperate to reunite with their protons, the stranded electrons are forced to take the long detour through the external circuit wire. That electron traffic jam through your wire <strong>is literal electricity</strong>. It powers your car motor, your smartphone, or lights a bulb!
+                    </li>
+                    <li><strong>At the Cathode (+):</strong> Oxygen (\(O_2\)) from the air arrives at the cathode catalyst. It welcomes the returning tired electrons from the wire and marries them to the protons that crossed the membrane:
+                        <br><strong>Cathode Reaction:</strong> \(O_2 + 4H^+ + 4e^- \to 2H_2O\)
+                    </li>
+                    <li><strong>The Exhaust:</strong> What comes out of the tailpipe? No smoke, no soot, no \(CO_2\). Just hot water vapor and pure warmth.
+                        <br><strong>Overall Reaction:</strong> \(2H_2 + O_2 \to 2H_2O + \text{Electrical Work } (\Delta G) + \text{Heat}\)
+                    </li>
+                </ol>
+            </div>
+
+            <!-- INTERACTIVE SIMULATION 1: FUEL CELL -->
+            <div class="sim-laboratory-card">
+                <div class="sim-header">
+                    <div class="sim-title-group">
+                        <h3>Interactive Lab: The Live Electrochemical Reactor</h3>
+                        <p class="sim-subtitle">Watch H₂ molecules split, protons tunnel across the electrolyte, and electrons ignite the load in real time.</p>
+                    </div>
+                    <span class="sim-status-tag">LIVE SIMULATION</span>
+                </div>
+
+                <div class="sim-canvas-wrap">
+                    <canvas id="canvas-fuelcell" width="600" height="360"></canvas>
+                </div>
+
+                <div class="sim-controls-panel">
+                    <div class="ctrl-item">
+                        <div class="ctrl-label">
+                            <span>Cell Architecture</span>
+                        </div>
+                        <select id="fc-type-select" class="sim-select">
+                            <option value="PEMFC" selected>PEMFC (Proton Exchange Membrane)</option>
+                            <option value="AFC">AFC (Alkaline Fuel Cell)</option>
+                            <option value="SOFC">SOFC (Solid Oxide Fuel Cell)</option>
+                            <option value="MCFC">MCFC (Molten Carbonate)</option>
+                            <option value="PAFC">PAFC (Phosphoric Acid)</option>
+                        </select>
+                    </div>
+
+                    <div class="ctrl-item">
+                        <div class="ctrl-label">
+                            <span>Current Load Density (i)</span>
+                            <span id="fc-load-val" class="ctrl-val">0.60 A/cm²</span>
+                        </div>
+                        <input type="range" id="fc-load-slider" min="0.05" max="1.4" step="0.05" value="0.6">
+                    </div>
+                </div>
+
+                <div class="sim-metrics-hud">
+                    <div class="metric-hud-box">
+                        <span class="metric-hud-label">Cell Output Voltage</span>
+                        <span id="fc-metric-voltage" class="metric-hud-val">0.720 V</span>
+                    </div>
+                    <div class="metric-hud-box">
+                        <span class="metric-hud-label">Power Density</span>
+                        <span id="fc-metric-power" class="metric-hud-val">432 mW/cm²</span>
+                    </div>
+                    <div class="metric-hud-box">
+                        <span class="metric-hud-label">Efficiency (Gibbs/Enthalpy)</span>
+                        <span id="fc-metric-eff" class="metric-hud-val">48%</span>
+                    </div>
+                    <div class="metric-hud-box">
+                        <span class="metric-hud-label">Operating Temperature</span>
+                        <span id="fc-metric-temp" class="metric-hud-val">80°C</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECTION 1.2 -->
+            <div class="content-block">
+                <h2 class="section-subhead">01.2 The 6 Fuel Cell Personalities <span>// Battle of the Electrolytes</span> <button class="listen-btn">▶ LISTEN 🎙</button></h2>
+                <p class="prose-text">
+                    Not all fuel cells are built alike. They are named strictly after their <strong>electrolyte</strong>, and each has its own quirks, operating temperature tantrums, and dirty secrets. Here is the definitive breakdown:
+                </p>
+
+                <div class="table-responsive">
+                    <table class="tech-table">
+                        <thead>
+                            <tr>
+                                <th>Fuel Cell Type</th>
+                                <th>Electrolyte</th>
+                                <th>Operating Temp</th>
+                                <th>Charge Carrier</th>
+                                <th>Typical Efficiency</th>
+                                <th>The Dirty Secret / Drama</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>AFC</strong><br>(Alkaline)</td>
+                                <td>Liquid KOH (Potassium Hydroxide)</td>
+                                <td>60°C – 100°C</td>
+                                <td>\(OH^-\) (Hydroxyl ion)</td>
+                                <td>60% – 70%</td>
+                                <td><strong>Poisoned by \(CO_2\)!</strong> A single breath of normal city air turns the liquid KOH into solid \(K_2CO_3\) chalk crystals that choke the stack. NASA loved it only because outer space has zero \(CO_2\).</td>
+                            </tr>
+                            <tr>
+                                <td><strong>PEMFC</strong><br>(Proton Exchange Membrane)</td>
+                                <td>Solid Polymer Sheet (Nafion)</td>
+                                <td>70°C – 90°C</td>
+                                <td>\(H^+\) (Proton)</td>
+                                <td>45% – 55%</td>
+                                <td><strong>Platinum Cartel & Flooding.</strong> Requires expensive platinum catalyst ($1,000+/oz). If the membrane dries out, proton conductivity drops to zero; if it gets too wet, water floods the pores and snuffs the reaction.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>PAFC</strong><br>(Phosphoric Acid)</td>
+                                <td>Liquid \(H_3PO_4\) in Silicon Carbide</td>
+                                <td>150°C – 200°C</td>
+                                <td>\(H^+\) (Proton)</td>
+                                <td>40% – 80% (with CHP)</td>
+                                <td><strong>The Stationary Workhorse.</strong> Tolerates up to 1.5% CO impurities, making it great for hospital/hotel stationary power. But highly corrosive acid means expensive graphite materials.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>MCFC</strong><br>(Molten Carbonate)</td>
+                                <td>Molten Lithium / Potassium Carbonate salts</td>
+                                <td>600°C – 700°C</td>
+                                <td>\(CO_3^{2-}\) (Carbonate ion)</td>
+                                <td>60% – 80%</td>
+                                <td><strong>Corrosive Molten Lava.</strong> Operates at glowing red temperatures. No precious platinum needed (cheap nickel works!), but molten salt eats gaskets and causes electrode dissolution over time.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>SOFC</strong><br>(Solid Oxide)</td>
+                                <td>Solid Ceramic (Yttria-Stabilized Zirconia YSZ)</td>
+                                <td>800°C – 1000°C</td>
+                                <td>\(O^{2-}\) (Oxygen ion)</td>
+                                <td>60% – 85% (Combined Cycle)</td>
+                                <td><strong>The Ceramic Inferno.</strong> Eats natural gas, syngas, or biogas directly without an external reformer. But takes hours to warm up, and rapid thermal cycling shatters the brittle ceramics like fine china.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>DMFC</strong><br>(Direct Methanol)</td>
+                                <td>Polymer Membrane</td>
+                                <td>60°C – 120°C</td>
+                                <td>\(H^+\) (Proton)</td>
+                                <td>30% – 40%</td>
+                                <td><strong>Methanol Crossover.</strong> Liquid methanol loves to sneak across the membrane without reacting, ruining cathode performance. Low efficiency, but soldiers love it because liquid alcohol is easy to pack.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- LECTURE DIAGRAMS GRID -->
+            <div class="content-block">
+                <h2 class="section-subhead">01.3 Visual Evidence <span>// Lecture Slide Artifacts</span></h2>
+                <div class="diagram-grid">
+                    <figure class="zoomable-figure">
+                        <div class="figure-media-wrap">
+                            <img src="assets/img/fuel_cells/fc_basic_schematic.png" alt="Fuel Cell Basic Operating Schematic" loading="lazy">
+                        </div>
+                        <figcaption>
+                            <strong>FIG 1.1: Standard Electrochemical Cell Cross-Section</strong>
+                            Direct from Lecture 3.1: Anode catalytic split, proton migration through central membrane, external circuit electron flow lighting the load, and water exhaust formation.
+                        </figcaption>
+                    </figure>
+
+                    <figure class="zoomable-figure">
+                        <div class="figure-media-wrap">
+                            <img src="assets/img/fuel_cells/fc_chem_diagram.png" alt="Electrolysis vs Fuel Cell Kinetics" loading="lazy">
+                        </div>
+                        <figcaption>
+                            <strong>FIG 1.2: Grove's Reverse Electrolysis Principle</strong>
+                            From Lecture 3.1: Demonstrating how applying electricity splits water into \(2H_2 + O_2\), while reversing the path spontaneously releases Gibbs free energy as continuous DC voltage.
+                        </figcaption>
+                    </figure>
+
+                    <figure class="zoomable-figure">
+                        <div class="figure-media-wrap">
+                            <img src="assets/img/fuel_cells/fc_stack_assembly.jpg" alt="Fuel Cell Bipolar Plates & Stack Assembly" loading="lazy">
+                        </div>
+                        <figcaption>
+                            <strong>FIG 1.3: Multi-Cell Stack & Bipolar Flow Fields</strong>
+                            From Lecture 3.2: Single cells produce only ~0.7V. To reach 300V for a vehicle or power station, hundreds of cells are compressed together with serpentine flow channels.
+                        </figcaption>
+                    </figure>
+
+                    <figure class="zoomable-figure">
+                        <div class="figure-media-wrap">
+                            <img src="assets/img/fuel_cells/fc_sofc_ceramic.png" alt="Solid Oxide Fuel Cell High Temp Ceramic" loading="lazy">
+                        </div>
+                        <figcaption>
+                            <strong>FIG 1.4: SOFC Ceramic YSZ Oxygen-Ion Transport</strong>
+                            From Lecture 3.3: High-temperature \(O^{2-}\) ionic conduction through ceramic crystal lattices, allowing direct internal reformation of hydrocarbon fuels.
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <!-- CURATED VIDEO EMBED -->
+            <div class="video-card">
+                <div class="video-header">
+                    <span class="video-title">LECTURE REFERENCE VIDEO // HOW A FUEL CELL ACTUALLY OPERATES</span>
+                    <span class="video-badge">YOUTUBE // 8xeB_O_fyzM</span>
+                </div>
+                <div class="video-embed-wrap">
+                    <iframe src="https://www.youtube-nocookie.com/embed/8xeB_O_fyzM?rel=0" title="Fuel Cell Working Principle" allowfullscreen></iframe>
+                </div>
+                <p class="video-caption">
+                    *Embedded directly from Lecture 3.1 Slide 4: Watch the electron separation and electrochemical catalytic reduction.*
+                </p>
+            </div>
+
+            <!-- CHAPTER FOOTER -->
+            <div class="chapter-footer">
+                <button class="mark-complete-btn" data-chapter="ch1">MARK CHAPTER 01 AS MASTERED</button>
+                <div class="ch-pagination">
+                    <button class="header-btn" data-cta-target="ch2">NEXT: CHAPTER 02 (EARTH & OCEAN) →</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================================
+             02. CHAPTER 2: GEOTHERMAL, OTEC, TIDAL & WAVE POWER
+             =================================================================== -->
+        <section id="section-ch2" class="chapter-section hidden">
+            <div class="chapter-hero-banner">
+                <div class="ch-meta-row">
+                    <span class="ch-pill">CHAPTER 02 // UNIT 4 CURRICULUM</span>
+                    <span id="badge-ch2" class="ch-badge">UNREAD</span>
+                </div>
+                <h1 class="ch-title">EARTH & OCEAN TITANS</h1>
+                <p class="ch-tagline">
+                    "Subterranean 6,000°C magma, the moon pulling 1.3 billion cubic kilometers of seawater, and a turbine blade so clever it never reverses direction."
+                </p>
+            </div>
+
+            <!-- TEA SPILL 2 -->
+            <div class="tea-spill-box">
+                <div class="tea-spill-header">
+                    <span class="tea-icon">☕</span>
+                    <span class="tea-label">THE TEA // THERMODYNAMIC REALITY</span>
+                    <button class="listen-btn" title="Listen to this tea spill">▶ LISTEN 🎙</button>
+                </div>
+                <h3 class="tea-headline">The Ocean is an Undercover Solar Billionaire (with a 3% Problem)</h3>
+                <p class="tea-content">
+                    Oceans cover 71% of Earth and soak up more solar energy every single day than 250 billion barrels of crude oil. It’s the world’s largest solar thermal battery! So why hasn’t <strong>OTEC (Ocean Thermal Energy Conversion)</strong> solved all world problems? 
+                    <br><br>
+                    Because of a cruel formula called the <strong>Carnot efficiency limit</strong>:
+                    $$\eta_{\text{Carnot}} = 1 - \frac{T_{\text{cold}}}{T_{\text{hot}}} = 1 - \frac{278\,\text{K}}{298\,\text{K}} \approx 6.7\%$$
+                    When your theoretical maximum efficiency is barely 6.7% and real-world net efficiency is <strong>3% to 4%</strong>, you have to pump colossal Olympic swimming pool volumes of deep freezing water every second. If your water intake pipe clogs with barnacles or your pumps consume more power than you generate (parasitic loss), your multimillion-dollar ocean barge becomes a floating paperweight!
+                </p>
+            </div>
+
+            <!-- 2.1 GEOTHERMAL -->
+            <div class="content-block">
+                <h2 class="section-subhead">02.1 Geothermal Energy <span>// Tapping the Core Inferno</span> <button class="listen-btn">▶ LISTEN 🎙</button></h2>
+                <p class="prose-text">
+                    The center of the Earth sits at an astonishing <strong>6,000°C</strong>—hotter than the surface of the Sun! That subterranean thermal energy radiates outward through the mantle and crust via radioactive decay of potassium, uranium, and thorium.
+                </p>
+                <p class="prose-text">
+                    Depending on reservoir temperature, geothermal power plants fall into three distinct architectures:
+                </p>
+                <div class="hero-trilogy-grid" style="margin-bottom: 2rem;">
+                    <div class="hero-card" style="cursor: default;">
+                        <div class="card-num">01 // DRY STEAM PLANT (>235°C)</div>
+                        <h4 class="card-title">Pure Steam Directly to Turbine</h4>
+                        <p class="card-desc">The rarest and cleanest. Fractured rock reservoirs yield pure dry steam directly from production wells. The steam shoots straight into a turbine generator without any boiler required (e.g., The Geysers in California).</p>
+                    </div>
+                    <div class="hero-card" style="cursor: default;">
+                        <div class="card-num">02 // FLASH STEAM PLANT (>180°C)</div>
+                        <h4 class="card-title">High-Pressure Brine Flashing</h4>
+                        <p class="card-desc">Deep subterranean water is kept liquid under tremendous lithostatic pressure. When brought to the surface into a low-pressure separator tank, it violently flashes into high-velocity steam that spins the turbine!</p>
+                    </div>
+                    <div class="hero-card" style="cursor: default;">
+                        <div class="card-num">03 // BINARY CYCLE PLANT (100°C–170°C)</div>
+                        <h4 class="card-title">Secondary Working Fluid Loop</h4>
+                        <p class="card-desc">When water isn't hot enough to boil, it passes through a heat exchanger to heat an organic fluid (like isobutane or pentane) with a low boiling point (~35°C). The vaporized isobutane spins the turbine in a closed loop!</p>
+                    </div>
+                </div>
+
+                <div class="tea-spill-box" style="margin-top: 1rem;">
+                    <div class="tea-spill-header">
+                        <span class="tea-icon">🇮🇳</span>
+                        <span class="tea-label">INDIAN GEOTHERMAL HOTSPOTS // LECTURE 4.1 CURRICULUM</span>
+                    </div>
+                    <h4 class="tea-headline">The Geological Survey of India (GSI) 340 Hot Spring Manifestations</h4>
+                    <p class="tea-content">
+                        India is sitting on high-enthalpy tectonic heat! Key prospective zones identified in your syllabus:
+                        <br>• <strong>Puga Valley & Chumathang (Ladakh):</strong> Located on the collision suture where the Indian plate plows under Eurasia. Geothermal fluids reach over 220°C!
+                        <br>• <strong>Manikaran (Himachal Pradesh):</strong> Famous Parvati Valley hot springs where tourists and pilgrims literally boil rice in bubbling 95°C mineral water.
+                        <br>• <strong>Rajgir & Surajkund (Bihar & Jharkhand) & Tapoban (Uttarakhand):</strong> High-potential hydrothermal discharge zones for direct heat, agriculture drying, and district heating.
+                    </p>
+                </div>
+            </div>
+
+            <!-- 2.2 OTEC -->
+            <div class="content-block">
+                <h2 class="section-subhead">02.2 Ocean Thermal Energy Conversion (OTEC) <span>// The 20°C Rule</span> <button class="listen-btn">▶ LISTEN 🎙</button></h2>
+                <p class="prose-text">
+                    OTEC works only in tropical waters between 20°N and 20°S latitude, where a strict condition is satisfied:
+                    <strong>The temperature difference between warm surface water (\(\sim 26^\circ\text{C}\)) and cold deep water at 1,000 meters (\(\sim 4^\circ\text{C}\)) must be \(\Delta T \ge 20^\circ\text{C}\).</strong>
+                </p>
+                <div class="hero-trilogy-grid">
+                    <div class="hero-card" style="cursor: default;">
+                        <div class="card-num">OPEN CYCLE (CLAUDE CYCLE)</div>
+                        <h4 class="card-title">Warm Seawater Flashed in Vacuum</h4>
+                        <p class="card-desc">
+                            Warm surface seawater is sprayed into a low-pressure vacuum vessel (\(0.03\,\text{bar}\)). It boils into steam at room temperature, drives a huge turbine, and is condensed by cold deep water into <strong>millions of gallons of pure desalinated fresh drinking water!</strong>
+                        </p>
+                    </div>
+                    <div class="hero-card" style="cursor: default;">
+                        <div class="card-num">CLOSED CYCLE (ANDERSON CYCLE)</div>
+                        <h4 class="card-title">Ammonia Rankine Loop</h4>
+                        <p class="card-desc">
+                            Uses pure Ammonia (\(NH_3\), boiling point \(-33^\circ\text{C}\)) in a closed hermetic loop. Warm surface water vaporizes ammonia into high-pressure vapor; the cold deep ocean water condenses it back to liquid to be pumped again.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2.3 TIDAL POWER -->
+            <div class="content-block">
+                <h2 class="section-subhead">02.3 Tidal Power <span>// Celestial Gravity & Syzygy</span> <button class="listen-btn">▶ LISTEN 🎙</button></h2>
+                <p class="prose-text">
+                    Tides are caused by the gravitational dance between the <strong>Moon, Sun, and Earth</strong> combined with centrifugal forces.
+                </p>
+                <ul style="margin-left: 2rem; margin-bottom: 1.5rem; line-height: 1.8; color: var(--text-secondary);">
+                    <li><strong>Spring Tides (Syzygy):</strong> When the Sun, Earth, and Moon line up in a straight line (during New Moon and Full Moon), their gravitational vectors reinforce each other. Ocean tides bulge to maximum heights!</li>
+                    <li><strong>Neap Tides (Quadrature):</strong> When the Moon sits at a 90° right angle to the Sun relative to Earth (First and Third Quarter moons), solar and lunar gravity fight each other, resulting in sluggish, minimal tidal ranges.</li>
+                </ul>
+
+                <p class="prose-text">
+                    <strong>Tidal Power Formula (Barrage Basin):</strong>
+                    The theoretical potential energy stored in a tidal basin of area \(A\) with tidal range \(R\) is:
+                    $$E = \frac{1}{2} A \rho g R^2$$
+                    $$P_{\text{avg}} = \frac{A \rho g R^2}{2T}$$
+                    Notice that power scales with <strong>\(R^2\) (Tidal range squared)</strong>! That is why tidal barrages only make financial sense in monster tidal estuaries like the Bay of Fundy (Canada, 16m range) or La Rance (France, 8.5m range, 240 MW).
+                </p>
+            </div>
+
+            <!-- INTERACTIVE SIMULATION 2: TIDAL ORBIT -->
+            <div class="sim-laboratory-card">
+                <div class="sim-header">
+                    <div class="sim-title-group">
+                        <h3>Interactive Lab: Celestial Tidal Syzygy vs Quadrature</h3>
+                        <p class="sim-subtitle">Rotate the Moon around Earth to watch gravitational tidal bulges expand during Syzygy and collapse during Quadrature.</p>
+                    </div>
+                    <span class="sim-status-tag">ORBITAL SIMULATOR</span>
+                </div>
+
+                <div class="sim-canvas-wrap">
+                    <canvas id="canvas-tidal" width="600" height="320"></canvas>
+                </div>
+
+                <div class="sim-controls-panel">
+                    <div class="ctrl-item">
+                        <div class="ctrl-label">
+                            <span>Moon Orbital Angle</span>
+                            <span id="tidal-moon-val" class="ctrl-val">0° (New Moon)</span>
+                        </div>
+                        <input type="range" id="tidal-moon-slider" min="0" max="360" step="1" value="0">
+                    </div>
+                </div>
+
+                <div class="sim-metrics-hud">
+                    <div class="metric-hud-box">
+                        <span class="metric-hud-label">Tidal Regime</span>
+                        <span id="tidal-metric-type" class="metric-hud-val">SPRING TIDE (SYZYGY)</span>
+                    </div>
+                    <div class="metric-hud-box">
+                        <span class="metric-hud-label">Estuary Tidal Range</span>
+                        <span id="tidal-metric-range" class="metric-hud-val">12.00 meters</span>
+                    </div>
+                    <div class="metric-hud-box">
+                        <span class="metric-hud-label">Relative Basin Power</span>
+                        <span id="tidal-metric-power" class="metric-hud-val">900% Baseline</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2.4 WAVE POWER & WELLS TURBINE -->
+            <div class="content-block">
+                <h2 class="section-subhead">02.4 Wave Power & The Magic Wells Turbine <span>// Defying Airflow Reversals</span> <button class="listen-btn">▶ LISTEN 🎙</button></h2>
+                <p class="prose-text">
+                    Waves are essentially wind energy concentrated into water surface ripples over thousands of nautical miles. 
+                    The wave power flux per unit of wavefront is:
+                    $$P \approx \frac{\rho g^2}{64\pi} H^2 T \approx 0.49 \cdot H^2 \cdot T \quad [\text{kW/m}]$$
+                    Where \(H\) is significant wave height (meters) and \(T\) is wave period (seconds). A 3-meter wave with a 9-second period packs an immense <strong>40 kW of raw power per meter of shoreline!</strong>
+                </p>
+
+                <p class="prose-text">
+                    The four champion wave energy conversion devices:
+                </p>
+                <ol style="margin-left: 2rem; margin-bottom: 2rem; line-height: 1.8; color: var(--text-secondary);">
+                    <li><strong>Oscillating Water Column (OWC):</strong> A hollow caisson on the shoreline. Water enters from below and rises/falls like a giant piston, compressing and sucking air through a bi-directional vent above.</li>
+                    <li><strong>The Wells Turbine:</strong> Invented by Dr. Alan Wells. Uses <em>symmetrical aerofoil blades</em>. Because lift forces are always angled along the direction of rotation regardless of whether air rushes up or down, the turbine <strong>spins in the same direction 100% of the time!</strong></li>
+                    <li><strong>Attenuators (Pelamis):</strong> Articulated floating snake segments aligned with wave direction. Waves flex the hydraulic hinges, pumping high-pressure fluid through hydraulic motors.</li>
+                    <li><strong>Overtopping Devices (Wave Dragon):</strong> Curved ramps direct waves over a wall into an elevated storage reservoir. The water drains back to sea through low-head hydro turbines.</li>
+                </ol>
+            </div>
+
+            <!-- INTERACTIVE SIMULATION 3: OWC & WELLS TURBINE -->
+            <div class="sim-laboratory-card">
+                <div class="sim-header">
+                    <div class="sim-title-group">
+                        <h3>Interactive Lab: The Oscillating Water Column & Wells Rotor</h3>
+                        <p class="sim-subtitle">Watch sea waves act as a water piston, forcing bidirectional airflow while the Wells symmetrical blades maintain continuous rotation!</p>
+                    </div>
+                    <span class="sim-status-tag">AERODYNAMIC SIMULATOR</span>
+                </div>
+
+                <div class="sim-canvas-wrap">
+                    <canvas id="canvas-owc" width="600" height="340"></canvas>
+                </div>
+
+                <div class="sim-controls-panel">
+                    <div class="ctrl-item">
+                        <div class="ctrl-label">
+                            <span>Wave Height (H)</span>
+                            <span id="owc-height-val" class="ctrl-val">2.5 m</span>
+                        </div>
+                        <input type="range" id="owc-height-slider" min="0.5" max="5.0" step="0.1" value="2.5">
+                    </div>
+
+                    <div class="ctrl-item">
+                        <div class="ctrl-label">
+                            <span>Wave Period (T)</span>
+                            <span id="owc-period-val" class="ctrl-val">8.0 s</span>
+                        </div>
+                        <input type="range" id="owc-period-slider" min="4.0" max="14.0" step="0.5" value="8.0">
+                    </div>
+                </div>
+
+                <div class="sim-metrics-hud">
+                    <div class="metric-hud-box">
+                        <span class="metric-hud-label">Wave Power Density</span>
+                        <span id="owc-metric-power" class="metric-hud-val">24.5 kW/m</span>
+                    </div>
+                    <div class="metric-hud-box">
+                        <span class="metric-hud-label">Wells Turbine Speed</span>
+                        <span id="owc-metric-rpm" class="metric-hud-val">594 RPM</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DIAGRAMS GRID CHAPTER 2 -->
+            <div class="content-block">
+                <h2 class="section-subhead">02.5 Lecture Diagrams Gallery <span>// Course Slides</span></h2>
+                <div class="diagram-grid">
+                    <figure class="zoomable-figure">
+                        <div class="figure-media-wrap">
+                            <img src="assets/img/geothermal/geo_flash_steam_plant.png" alt="Geothermal Flash Steam Cycle" loading="lazy">
+                        </div>
+                        <figcaption>
+                            <strong>FIG 2.1: Flash Steam Geothermal Flowsheet</strong>
+                            From Lecture 4.1: Hydrothermal well bringing pressurized brine to flash separator, steam header driving turbine, and cold brine re-injected underground.
+                        </figcaption>
+                    </figure>
+
+                    <figure class="zoomable-figure">
+                        <div class="figure-media-wrap">
+                            <img src="assets/img/otec/otec_system_cycle.jpg" alt="OTEC Ocean Thermal Flowsheet" loading="lazy">
+                        </div>
+                        <figcaption>
+                            <strong>FIG 2.2: OTEC Closed-Cycle Ammonia Circuit</strong>
+                            From Lecture 4.2: Surface water evaporator (\(25^\circ\text{C}\)), low-pressure vapor turbine, and deep sea condenser (\(5^\circ\text{C}\)) cooled by 1,000m intake pipe.
+                        </figcaption>
+                    </figure>
+
+                    <figure class="zoomable-figure">
+                        <div class="figure-media-wrap">
+                            <img src="assets/img/tidal/tidal_barrage_plant.jpg" alt="Tidal Barrage Sluice & Basin" loading="lazy">
+                        </div>
+                        <figcaption>
+                            <strong>FIG 2.3: Tidal Estuary Barrage & Sluice Gates</strong>
+                            From Lecture 4.3: Capturing high tide water behind a barrage, then discharging through low-head bulb turbines during ebb tide.
+                        </figcaption>
+                    </figure>
+
+                    <figure class="zoomable-figure">
+                        <div class="figure-media-wrap">
+                            <img src="assets/img/wave/wave_owc_system.png" alt="Oscillating Water Column and Wells Turbine" loading="lazy">
+                        </div>
+                        <figcaption>
+                            <strong>FIG 2.4: Shoreline Caisson & Wells Airfoil Profile</strong>
+                            From Lecture 4.4 & 4.5: Aerodynamic symmetry ensuring unidirectional torque regardless of upward or downward flow vectors.
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <!-- CHAPTER FOOTER -->
+            <div class="chapter-footer">
+                <button class="mark-complete-btn" data-chapter="ch2">MARK CHAPTER 02 AS MASTERED</button>
+                <div class="ch-pagination">
+                    <button class="header-btn" data-cta-target="ch1">← PREVIOUS: CH 01</button>
+                    <button class="header-btn" data-cta-target="ch3">NEXT: CHAPTER 03 (MHD PLASMA) →</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================================
+             03. CHAPTER 3: MAGNETOHYDRODYNAMICS (MHD)
+             =================================================================== -->
+        <section id="section-ch3" class="chapter-section hidden">
+            <div class="chapter-hero-banner">
+                <div class="ch-meta-row">
+                    <span class="ch-pill">CHAPTER 03 // UNIT 5 CURRICULUM</span>
+                    <span id="badge-ch3" class="ch-badge">UNREAD</span>
+                </div>
+                <h1 class="ch-title">MAGNETOHYDRODYNAMICS (MHD)</h1>
+                <p class="ch-tagline">
+                    "Toss your mechanical turbines in the garbage. We are shooting 2,500°C supersonic ionized plasma through a 6-Tesla magnetic field and snatching pure DC current straight from the vortex."
+                </p>
+            </div>
+
+            <!-- TEA SPILL 3 -->
+            <div class="tea-spill-box">
+                <div class="tea-spill-header">
+                    <span class="tea-icon">☕</span>
+                    <span class="tea-label">THE TEA // THE COLD WAR PLASMA RACE</span>
+                    <button class="listen-btn" title="Listen to this tea spill">▶ LISTEN 🎙</button>
+                </div>
+                <h3 class="tea-headline">The Soviet U-25 Secret & The Faraday Bridge Bet</h3>
+                <p class="tea-content">
+                    Did you know that in <strong>1832</strong>, <strong>Michael Faraday</strong> stood on Waterloo Bridge over the River Thames in London with two copper plates dipped in the water? He knew salty river water was conductive, and Earth had a magnetic field. He tried to generate electricity from the flow of the Thames! His galvanometer barely twitched because Earth's field is only 0.5 Gauss, but the principle of <em>Magnetohydrodynamics</em> was born.
+                    <br><br>
+                    Fast forward to 1971: The Soviet Union built the monstrous <strong>U-25 MHD facility</strong> in Moscow. They burned seeded natural gas to produce 25 MW of pure direct electricity with <em>zero rotating turbine blades</em>! It was so terrifyingly advanced that the US and USSR signed a joint scientific cooperation treaty just to share MHD channel data during the height of the Cold War.
+                </p>
+            </div>
+
+            <!-- 3.1 MHD WORKING PRINCIPLE -->
+            <div class="content-block">
+                <h2 class="section-subhead">03.1 The Working Principle <span>// Direct Plasma Electrodynamics</span> <button class="listen-btn">▶ LISTEN 🎙</button></h2>
+                <p class="prose-text">
+                    In a traditional power plant, you burn fuel to make steam, use steam to push turbine blades, spin a shaft, and rotate copper coils inside a generator. Every mechanical stage loses energy to friction, bearings, and entropy.
+                </p>
+                <p class="prose-text">
+                    <strong>MHD eliminates every single moving part.</strong> The conductive working fluid (ionized gas or liquid metal) IS the moving conductor!
+                </p>
+                <p class="prose-text">
+                    The physics rests on the universal <strong>Lorentz Force Law</strong>:
+                    $$\vec{F} = q \cdot (\vec{E} + \vec{v} \times \vec{B})$$
+                    When an ionized gas particle with charge \(q\) moves at velocity \(\vec{v}\) perpendicularly through a magnetic field \(\vec{B}\):
+                </p>
+                <ul style="margin-left: 2rem; margin-bottom: 1.5rem; line-height: 1.9; color: var(--text-secondary);">
+                    <li>The cross product \(\vec{v} \times \vec{B}\) exerts a powerful transverse deflecting force.</li>
+                    <li><strong>Positive ions (\(K^+\))</strong> are shoved upward toward the top electrode (anode).</li>
+                    <li><strong>Free electrons (\(e^-\))</strong> are shoved downward toward the bottom electrode (cathode).</li>
+                    <li>This charge separation sets up an induced electric field \(E = v \cdot B\), generating massive direct current (DC) across an external load resistor!</li>
+                </ul>
+            </div>
+
+            <!-- 3.2 THE SEEDING SECRET -->
+            <div class="content-block">
+                <h2 class="section-subhead">03.2 The Seeding Secret <span>// Why Clean Flame Refuses to Conduct</span> <button class="listen-btn">▶ LISTEN 🎙</button></h2>
+                <p class="prose-text">
+                    Here’s the catch your professor loves to grill you on: air or clean combustion flue gas is a terrible electrical conductor. To thermally ionize ordinary nitrogen and oxygen into plasma, you would need temperatures exceeding <strong>4,000 K (3,700°C)</strong>. At that temperature, your duct materials would melt into glowing radioactive slag!
+                </p>
+                <p class="prose-text">
+                    So how do engineers cheat physics? <strong>SEEDING!</strong>
+                    They inject 1% to 2% by weight of alkali metal salts with very low ionization potentials:
+                </p>
+                <div class="table-responsive">
+                    <table class="tech-table">
+                        <thead>
+                            <tr>
+                                <th>Alkali Seed Material</th>
+                                <th>Ionization Energy</th>
+                                <th>Typical Salt Used</th>
+                                <th>Why It Works</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Potassium (K)</strong></td>
+                                <td><strong>4.34 eV</strong></td>
+                                <td>Potassium Carbonate (\(K_2CO_3\))</td>
+                                <td>Cheap, abundant, drops the required plasma temperature to a manageable <strong>2,200K – 2,500K</strong>. Used in coal-fired and open-cycle MHD.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Cesium (Cs)</strong></td>
+                                <td><strong>3.89 eV</strong></td>
+                                <td>Pure Cesium Vapor</td>
+                                <td>The lowest ionization energy of any stable element! Phenomenal electrical conductivity, but expensive. Reserved for high-tech closed-cycle nuclear loops.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- INTERACTIVE SIMULATION 4: MHD PLASMA CANNON -->
+            <div class="sim-laboratory-card">
+                <div class="sim-header">
+                    <div class="sim-title-group">
+                        <h3>Interactive Lab: The Supersonic MHD Plasma Cannon</h3>
+                        <p class="sim-subtitle">Dial the magnetic field (Tesla) and gas velocity (m/s) to watch Lorentz charge separation in action!</p>
+                    </div>
+                    <span class="sim-status-tag">PLASMA DUCT SIMULATOR</span>
+                </div>
+
+                <div class="sim-canvas-wrap">
+                    <canvas id="canvas-mhd" width="600" height="340"></canvas>
+                </div>
+
+                <div class="sim-controls-panel">
+                    <div class="ctrl-item">
+                        <div class="ctrl-label">
+                            <span>Magnetic Field (B)</span>
+                            <span id="mhd-b-val" class="ctrl-val">3.5 Tesla</span>
+                        </div>
+                        <input type="range" id="mhd-b-slider" min="1.0" max="6.0" step="0.5" value="3.5">
+                    </div>
+
+                    <div class="ctrl-item">
+                        <div class="ctrl-label">
+                            <span>Plasma Velocity (v)</span>
+                            <span id="mhd-v-val" class="ctrl-val">1500 m/s</span>
+                        </div>
+                        <input type="range" id="mhd-v-slider" min="600" max="2400" step="100" value="1500">
+                    </div>
+
+                    <div class="ctrl-item">
+                        <div class="ctrl-label">
+                            <span>Potassium Seed (K₂CO₃)</span>
+                            <span id="mhd-seed-val" class="ctrl-val">1.0%</span>
+                        </div>
+                        <input type="range" id="mhd-seed-slider" min="0.2" max="3.0" step="0.2" value="1.0">
+                    </div>
+                </div>
+
+                <div class="sim-metrics-hud">
+                    <div class="metric-hud-box">
+                        <span class="metric-hud-label">Open Circuit Voltage</span>
+                        <span id="mhd-metric-voc" class="metric-hud-val">2625 Volts DC</span>
+                    </div>
+                    <div class="metric-hud-box">
+                        <span class="metric-hud-label">Power Density Output</span>
+                        <span id="mhd-metric-power" class="metric-hud-val">41.3 MW/m³</span>
+                    </div>
+                    <div class="metric-hud-box">
+                        <span class="metric-hud-label">Plasma Conductivity (σ)</span>
+                        <span id="mhd-metric-cond" class="metric-hud-val">15.0 S/m</span>
+                    </div>
+                    <div class="metric-hud-box">
+                        <span class="metric-hud-label">Combined Cycle Efficiency</span>
+                        <span id="mhd-metric-eff" class="metric-hud-val">51.6%</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3.3 CYCLES & CONFIGURATIONS -->
+            <div class="content-block">
+                <h2 class="section-subhead">03.3 Open vs Closed Cycles <span>// The System Blueprint</span> <button class="listen-btn">▶ LISTEN 🎙</button></h2>
+                <div class="hero-trilogy-grid">
+                    <div class="hero-card" style="cursor: default;">
+                        <div class="card-num">01 // OPEN CYCLE MHD</div>
+                        <h4 class="card-title">Coal / Gas Combustion Directly Discharged</h4>
+                        <p class="card-desc">
+                            Fuel (coal or natural gas) burns with preheated air and potassium seed in a combustion chamber at 2500°C. Gas accelerates through a supersonic nozzle into the channel. Exhaust heat passes through an air preheater and boiler, and the potassium seed is captured by electrostatic precipitators before the stack.
+                        </p>
+                    </div>
+
+                    <div class="hero-card" style="cursor: default;">
+                        <div class="card-num">02 // CLOSED CYCLE (SEEDED INERT GAS)</div>
+                        <h4 class="card-title">Argon/Helium + Cesium Circulating Loop</h4>
+                        <p class="card-desc">
+                            Clean inert gas (Argon) seeded with Cesium is heated via a nuclear reactor core or high-temperature ceramic heat exchanger. Operating in a closed loop prevents seed loss and corrosion, allowing higher plasma conductivity at 1800K.
+                        </p>
+                    </div>
+
+                    <div class="hero-card" style="cursor: default;">
+                        <div class="card-num">03 // CLOSED CYCLE (LIQUID METAL)</div>
+                        <h4 class="card-title">Liquid Sodium / Potassium (NaK) Alloy</h4>
+                        <p class="card-desc">
+                            Liquid metal has astronomical electrical conductivity without needing extreme ionization temperatures (operates at 700°C–900°C). A two-phase mixer injects vapor bubbles to accelerate the metal slugs through the magnetic channel.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3.4 COMBINED CYCLE HOLY GRAIL -->
+            <div class="content-block">
+                <h2 class="section-subhead">03.4 The Combined Cycle Holy Grail <span>// 60% Thermal Efficiency</span> <button class="listen-btn">▶ LISTEN 🎙</button></h2>
+                <p class="prose-text">
+                    Why did power companies obsess over MHD? Because of the <strong>MHD-Steam Combined Cycle</strong>!
+                </p>
+                <p class="prose-text">
+                    In a standard steam power station, boiler metallurgy limits peak temperatures to ~550°C, capping thermal efficiency around 35%–38%. 
+                    <br><br>
+                    With MHD:
+                    <br>1. <strong>MHD Topping Cycle:</strong> Burns fuel at 2,500°C and extracts 20%–25% of electrical energy directly through the magnetic channel down to 1,800°C.
+                    <br>2. <strong>Steam Bottoming Cycle:</strong> The exhaust gas leaving the MHD diffuser is STILL at 1,800°C—hotter than a normal blast furnace! That exhaust is fed into a conventional steam boiler, driving a standard steam turbine generator.
+                    <br>3. <strong>The Math:</strong> Combined plant efficiency jumps from 38% to an astounding <strong>55% to 60%!</strong> That is almost double the electricity per ton of fuel.
+                </p>
+            </div>
+
+            <!-- 3.5 LECTURE DIAGRAMS GRID -->
+            <div class="content-block">
+                <h2 class="section-subhead">03.5 Lecture Diagrams Gallery <span>// Course Slides</span></h2>
+                <div class="diagram-grid">
+                    <figure class="zoomable-figure">
+                        <div class="figure-media-wrap">
+                            <img src="assets/img/mhd/mhd_working_principle.gif" alt="MHD Working Principle Animation" loading="lazy">
+                        </div>
+                        <figcaption>
+                            <strong>FIG 3.1: Fundamental MHD Channel Dynamics</strong>
+                            From Lecture 5.1: Showing the 90° orthogonal orientation between velocity \(\vec{v}\), magnetic field \(\vec{B}\), and induced current \(\vec{J}\).
+                        </figcaption>
+                    </figure>
+
+                    <figure class="zoomable-figure">
+                        <div class="figure-media-wrap">
+                            <img src="assets/img/mhd/mhd_lorentz_faraday.jpg" alt="Lorentz Force Law on Plasma Particles" loading="lazy">
+                        </div>
+                        <figcaption>
+                            <strong>FIG 3.2: Lorentz Force Charge Deflection</strong>
+                            From Lecture 5.3: Particle trajectory split showing positive ions deflected to top electrode and electrons deflected to bottom electrode.
+                        </figcaption>
+                    </figure>
+
+                    <figure class="zoomable-figure">
+                        <div class="figure-media-wrap">
+                            <img src="assets/img/mhd/mhd_open_cycle.jpg" alt="Open Cycle MHD Power Plant Flowsheet" loading="lazy">
+                        </div>
+                        <figcaption>
+                            <strong>FIG 3.3: Complete Open Cycle Plant Schematic</strong>
+                            From Lecture 5.3: Combustor, seed injection, superconducting magnet duct, inverter, air preheater, steam bottoming cycle, and seed recovery unit.
+                        </figcaption>
+                    </figure>
+
+                    <figure class="zoomable-figure">
+                        <div class="figure-media-wrap">
+                            <img src="assets/img/mhd/mhd_segmented_electrodes.jpg" alt="Segmented Faraday Electrodes against Hall effect" loading="lazy">
+                        </div>
+                        <figcaption>
+                            <strong>FIG 3.4: Segmented Electrodes Defeating the Hall Current</strong>
+                            From Lecture 5.3: Eliminating axial Hall short-circuits by dividing continuous copper into discrete insulated electrode segments.
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <!-- CHAPTER FOOTER -->
+            <div class="chapter-footer">
+                <button class="mark-complete-btn" data-chapter="ch3">MARK CHAPTER 03 AS MASTERED</button>
+                <div class="ch-pagination">
+                    <button class="header-btn" data-cta-target="ch2">← PREVIOUS: CH 02</button>
+                    <button class="header-btn" data-cta-target="quiz">TAKE THE GAUNTLET TEST →</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================================
+             04. THE GAUNTLET (QUIZZES)
+             =================================================================== -->
+        <section id="section-quiz" class="chapter-section hidden">
+            <div class="chapter-hero-banner">
+                <div class="ch-meta-row">
+                    <span class="ch-pill">INTERACTIVE EVALUATION // THE GAUNTLET</span>
+                </div>
+                <h1 class="ch-title">THE UNCENSORED ENERGY GAUNTLET</h1>
+                <p class="ch-tagline">
+                    "Think you know your fuel cells from your Faraday loops? Let's see if you can survive our witty, razor-sharp exam simulator."
+                </p>
+            </div>
+
+            <div class="quiz-wrapper">
+                <div class="quiz-nav-row">
+                    <button class="quiz-nav-btn active" data-chapter="ch1">CH 01: FUEL CELLS</button>
+                    <button class="quiz-nav-btn" data-chapter="ch2">CH 02: EARTH & OCEAN</button>
+                    <button class="quiz-nav-btn" data-chapter="ch3">CH 03: MHD PLASMA</button>
+                </div>
+
+                <div id="quiz-box" class="quiz-box">
+                    <!-- Populated dynamically by js/quiz.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================================
+             05. THE TEA ROOM (DR. NOVA BLACK CHAT)
+             =================================================================== -->
+        <section id="section-chat" class="chapter-section hidden">
+            <div class="chapter-hero-banner">
+                <div class="ch-meta-row">
+                    <span class="ch-pill">INTERACTIVE CONFESSIONAL // 24/7 AI DIALOGUE</span>
+                </div>
+                <h1 class="ch-title">DR. NOVA’S TEA ROOM</h1>
+                <p class="ch-tagline">
+                    "Ask me anything about thermodynamics, corporate beefs, failure modes, or guaranteed exam questions. Zero corporate PR, pure technical truth."
+                </p>
+            </div>
+
+            <div class="chat-container">
+                <div class="chat-header">
+                    <div class="chat-header-title">
+                        <span>☕ DR. NOVA BLACK // UNCENSORED ENERGY PROFESSOR</span>
+                    </div>
+                    <span style="font-family: var(--mono-font); font-size: 0.72rem; color: var(--text-muted);">ONLINE // NO FILTER</span>
+                </div>
+
+                <div class="chat-chips-bar">
+                    <button class="chat-chip" data-query="Why did Elon Musk call Fuel Cells 'Fool Cells'?">🔥 Elon Musk vs Fuel Cells</button>
+                    <button class="chat-chip" data-query="Why didn't MHD generators take over the world?">⚡ Why MHD Stalled</button>
+                    <button class="chat-chip" data-query="Explain how the Wells turbine works">🌀 Wells Turbine Magic</button>
+                    <button class="chat-chip" data-query="Is OTEC an unlimited clean water cheat code?">🌊 OTEC Fresh Water</button>
+                    <button class="chat-chip" data-query="Why do Alkaline Fuel Cells hate CO2?">🧪 AFC vs CO₂ Poison</button>
+                    <button class="chat-chip" data-query="What questions will the professor ask on the semester exam?">📝 Guaranteed Exam Questions</button>
+                </div>
+
+                <div id="chat-stream" class="chat-stream">
+                    <div class="chat-message bot-message">
+                        <div class="chat-bubble bot-bubble">
+                            <div class="msg-sender">DR. NOVA BLACK ☕ // CHIEF CONFESSOR</div>
+                            <div class="msg-text">
+                                Pull up a chair, darling. I have zero patience for sugar-coated marketing or hand-waving textbook explanations. Whether you want the dirty chemistry of <strong>Nafion membranes</strong>, the truth about <strong>why La Rance tidal plant cost so much</strong>, or the raw physics of <strong>MHD Lorentz deflection</strong>—ask away or tap one of the juicy prompts above!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chat-input-bar">
+                    <input type="text" id="chat-user-input" class="chat-input" placeholder="Type your burning energy question or spill the tea..." autocomplete="off">
+                    <button id="chat-send-btn" class="chat-send-btn">SEND →</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================================
+             06. FORMULA VAULT & CHEAT SHEET
+             =================================================================== -->
+        <section id="section-vault" class="chapter-section hidden">
+            <div class="chapter-hero-banner">
+                <div class="ch-meta-row">
+                    <span class="ch-pill">EXAM VAULT // 1-PAGE CHEAT SHEET</span>
+                </div>
+                <h1 class="ch-title">THE THERMODYNAMIC FORMULA VAULT</h1>
+                <p class="ch-tagline">
+                    "Every critical equation, constant, and relationship across all three chapters in one high-voltage monochrome summary."
+                </p>
+            </div>
+
+            <div class="cheat-sheet-actions">
+                <button class="header-btn" onclick="window.print()">🖨 PRINT CHEAT SHEET (PDF)</button>
+            </div>
+
+            <div class="vault-grid">
+                <!-- FORMULA 1 -->
+                <div class="formula-card">
+                    <span class="formula-topic">CHAPTER 01 // FUEL CELLS</span>
+                    <h4 class="formula-name">Gibbs Free Energy & Ideal Voltage</h4>
+                    <div class="formula-math-display">
+                        $$E^\circ = -\frac{\Delta G^\circ}{nF} = 1.229\,\text{V}$$
+                    </div>
+                    <p class="formula-notes">
+                        Where \(\Delta G^\circ = -237.2\,\text{kJ/mol}\) for liquid water, \(n = 2\) electrons transferred per \(H_2\), and \(F = 96,485\,\text{C/mol}\) (Faraday's constant). Unlike heat engines, theoretical efficiency is:
+                        $$\eta_{\text{max}} = \frac{\Delta G}{\Delta H} \approx 83\%$$
+                    </p>
+                </div>
+
+                <!-- FORMULA 2 -->
+                <div class="formula-card">
+                    <span class="formula-topic">CHAPTER 01 // FUEL CELLS</span>
+                    <h4 class="formula-name">Real Fuel Cell Polarisation Curve</h4>
+                    <div class="formula-math-display">
+                        $$V_{\text{cell}} = E^\circ - \Delta V_{\text{act}} - \Delta V_{\text{ohm}} - \Delta V_{\text{conc}}$$
+                    </div>
+                    <p class="formula-notes">
+                        Three distinct voltage drop regimes:
+                        <br>1. <strong>Activation loss</strong>: Tafel equation (catalyst electron transfer barrier).
+                        <br>2. <strong>Ohmic loss</strong>: \(i \cdot R\) (membrane resistance to proton flow).
+                        <br>3. <strong>Concentration / Mass transport loss</strong>: gas diffusion starvation at high currents.
+                    </p>
+                </div>
+
+                <!-- FORMULA 3 -->
+                <div class="formula-card">
+                    <span class="formula-topic">CHAPTER 02 // OTEC</span>
+                    <h4 class="formula-name">Carnot Limit & OTEC Viability</h4>
+                    <div class="formula-math-display">
+                        $$\eta_{\text{Carnot}} = 1 - \frac{T_C}{T_H} \approx 6.7\%$$
+                    </div>
+                    <p class="formula-notes">
+                        Surface water \(T_H \approx 26^\circ\text{C} = 299\,\text{K}\), deep water at 1,000m \(T_C \approx 4^\circ\text{C} = 277\,\text{K}\).
+                        Real plant efficiency is <strong>3% to 4%</strong> after accounting for cold-water deep pumping parasitic power! Requires \(\Delta T \ge 20^\circ\text{C}\).
+                    </p>
+                </div>
+
+                <!-- FORMULA 4 -->
+                <div class="formula-card">
+                    <span class="formula-topic">CHAPTER 02 // TIDAL BARRAGE</span>
+                    <h4 class="formula-name">Tidal Basin Energy & Power</h4>
+                    <div class="formula-math-display">
+                        $$E = \frac{1}{2} A \rho g R^2 \quad\Longrightarrow\quad P_{\text{avg}} = \frac{A \rho g R^2}{2T}$$
+                    </div>
+                    <p class="formula-notes">
+                        Where \(A\) is basin area \((m^2)\), \(\rho \approx 1025\,\text{kg/m}^3\) (seawater density), \(g = 9.81\,\text{m/s}^2\), and \(R\) is tidal range \((m)\).
+                        <strong>Key Insight:</strong> Power is proportional to \(R^2\) (tidal range squared)!
+                    </p>
+                </div>
+
+                <!-- FORMULA 5 -->
+                <div class="formula-card">
+                    <span class="formula-topic">CHAPTER 02 // WAVE POWER</span>
+                    <h4 class="formula-name">Deep-Water Wave Energy Flux</h4>
+                    <div class="formula-math-display">
+                        $$P = \frac{\rho g^2}{64\pi} H^2 T \approx 0.49 \cdot H^2 \cdot T \quad [\text{kW/m}]$$
+                    </div>
+                    <p class="formula-notes">
+                        Where \(H\) is wave height (meters) and \(T\) is wave period (seconds). 
+                        A 3m swell with an 8s period delivers \(\approx 35.3\,\text{kW}\) of continuous kinetic power per meter of coastline!
+                    </p>
+                </div>
+
+                <!-- FORMULA 6 -->
+                <div class="formula-card">
+                    <span class="formula-topic">CHAPTER 03 // MHD GENERATOR</span>
+                    <h4 class="formula-name">Lorentz Force & Induced Voltage</h4>
+                    <div class="formula-math-display">
+                        $$\vec{F} = q(\vec{E} + \vec{v} \times \vec{B}) \quad\Longrightarrow\quad V_{\text{oc}} = v \cdot B \cdot d$$
+                    </div>
+                    <p class="formula-notes">
+                        Open-circuit voltage is the product of plasma velocity \(v\), transverse magnetic field \(B\), and duct electrode separation \(d\).
+                        Power density output of the MHD channel:
+                        $$P_{\text{density}} = \sigma \cdot v^2 \cdot B^2 \cdot K(1 - K) \quad [\text{W/m}^3]$$
+                        Where \(\sigma\) is plasma conductivity and \(K = V_{\text{load}} / V_{\text{oc}}\) (max power at \(K = 0.5\)).
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FLOATING SPEECH NARRATOR BAR -->
+    <div id="speech-floating-player" class="speech-floating-player hidden">
+        <div class="speech-player-left">
+            <span id="speech-player-status" class="speech-player-status">DR. NOVA NARRATOR</span>
+            <div id="speech-player-wave" class="speech-player-wave">
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+            </div>
+        </div>
+
+        <div class="speech-player-controls">
+            <button id="speech-player-play" class="speech-ctrl-btn">▶ PLAY</button>
+            <button id="speech-player-stop" class="speech-ctrl-btn">■ STOP</button>
+            <select id="speech-rate-select" class="speech-select" title="Speech Speed">
+                <option value="0.8">0.8x Slow</option>
+                <option value="1.0" selected>1.0x Normal</option>
+                <option value="1.25">1.25x Brisk</option>
+                <option value="1.5">1.5x Rapid</option>
+            </select>
+            <select id="speech-voice-select" class="speech-select" title="Select Voice">
+                <option value="">Default Voice</option>
+            </select>
+            <button id="speech-player-close" class="speech-close-btn" title="Dismiss Player">✕</button>
+        </div>
+    </div>
+
+    <!-- LIGHTBOX MODAL -->
+    <div id="lightbox-modal" class="lightbox-modal hidden">
+        <button id="lightbox-close" class="lightbox-close">✕ CLOSE</button>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="Enlarged Technical Diagram">
+        </div>
+        <p id="lightbox-caption" class="lightbox-caption"></p>
+    </div>
+
+    <!-- SITE FOOTER -->
+    <footer class="site-footer">
+        <p>RE:NEWABLE // THE UNCENSORED ENERGY TRILOGY &bull; CRAFTED IN STRICT MONOCHROME</p>
+        <p style="margin-top: 0.5rem; color: var(--text-muted);">
+            Covers Unit 3 (Fuel Cells), Unit 4 (Geothermal, OTEC, Tidal & Wave), and Unit 5 (MHD Power Generation).
+        </p>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="js/audio.js"></script>
+    <script src="js/speech.js"></script>
+    <script src="js/simulations.js"></script>
+    <script src="js/quiz.js"></script>
+    <script src="js/dialogue.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
